@@ -16,7 +16,7 @@ class ProductController {
    * @param {object} ctx
    * @param {Request} ctx.request
    * @param {Response} ctx.response
-   * @param {View} ctx.view
+   * @param {Object} ctx.pagination
    */
   async index ({ request, response, pagination }) {
 
