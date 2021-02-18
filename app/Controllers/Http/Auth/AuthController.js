@@ -6,12 +6,11 @@ const Role = use('Role')
 
 class AuthController {
 
-    async registrer({ request,response}){
+    async register({ request,response}){
         const trx = await Database.beginTransaction()
         try{
 
             const{ name,surname, email, password} = request.all()
-
             const user = await User.create({name,surname,email,password}, trx)
             const userRole = await Role.findBy('slug', 'client')
             await user.roles().attach([userRole.id],null,trx)
