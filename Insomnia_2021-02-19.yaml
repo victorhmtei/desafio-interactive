@@ -1,0 +1,1020 @@
+_type: export
+__export_format: 4
+__export_date: 2021-02-19T20:42:21.243Z
+__export_source: insomnia.desktop.app:v2020.5.2
+resources:
+  - _id: req_fed554d0e0b84e46ae98b2bcf0811ec9
+    parentId: fld_0c66647fd7a948aba70d39808cd2d2a6
+    modified: 1613766719365
+    created: 1613766639814
+    url: "{{ _.adonis }}/client/orders"
+    name: Edit Order
+    description: ""
+    method: PUT
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1613766639814
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_0c66647fd7a948aba70d39808cd2d2a6
+    parentId: fld_86618c0066c045f6ac59a67210b7f245
+    modified: 1613766549653
+    created: 1613766549653
+    name: Orders
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1613766549653
+    _type: request_group
+  - _id: fld_86618c0066c045f6ac59a67210b7f245
+    parentId: wrk_25de5099c6bf4c65abf08d865474f231
+    modified: 1613766282191
+    created: 1613766282191
+    name: Client
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1613766282191
+    _type: request_group
+  - _id: wrk_25de5099c6bf4c65abf08d865474f231
+    parentId: null
+    modified: 1613620531660
+    created: 1613620531660
+    name: Desafio
+    description: ""
+    scope: null
+    _type: workspace
+  - _id: req_cb947868902d42a1b1aad0df9202a9a3
+    parentId: fld_0c66647fd7a948aba70d39808cd2d2a6
+    modified: 1613766705063
+    created: 1613766624998
+    url: "{{ _.adonis }}/client/orders"
+    name: Create Order
+    description: ""
+    method: POST
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1613766624998
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_01aaa8b0e9654f448b0bd988a397ca54
+    parentId: fld_0c66647fd7a948aba70d39808cd2d2a6
+    modified: 1613766661614
+    created: 1613766576678
+    url: "{{ _.adonis }}/client/orders"
+    name: Find Order
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1613766576678
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_53f3c398cad74731b98df1760af78632
+    parentId: fld_0c66647fd7a948aba70d39808cd2d2a6
+    modified: 1613766655080
+    created: 1613766560827
+    url: "{{ _.adonis }}/client/orders"
+    name: List Orders
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1613766560827
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_f30ae007a1cc43c089fc081eb6513565
+    parentId: fld_25afc8e7c7c748f4ac86e9778f50a40d
+    modified: 1613766539849
+    created: 1613766301854
+    url: "{{ _.adonis }}/client/products/"
+    name: Find Product
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1613766314482
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_25afc8e7c7c748f4ac86e9778f50a40d
+    parentId: fld_86618c0066c045f6ac59a67210b7f245
+    modified: 1613766535743
+    created: 1613766535743
+    name: Products
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1613766535743
+    _type: request_group
+  - _id: req_53d3c5d2db15435ab508db9db9c13b4b
+    parentId: fld_25afc8e7c7c748f4ac86e9778f50a40d
+    modified: 1613766537366
+    created: 1613766314432
+    url: "{{ _.adonis }}/client/products"
+    name: List Products
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1613766314432
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_7fdba0b0d1254d3d8c8600bdd6a3ad1f
+    parentId: fld_330b56b1f8914c8a9433b86958cfbd82
+    modified: 1613765084623
+    created: 1613621042048
+    url: "{{ _.adonis }}/auth/register"
+    name: Create User
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "Victor",
+        	"surname": "Martins",
+        	"email": "teste01@gmail.com",
+        	"password": "12345"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_10c6dd7f27434ce38bd5be2ab0a20c1e
+    authentication: {}
+    metaSortKey: -1613621042048
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_330b56b1f8914c8a9433b86958cfbd82
+    parentId: wrk_25de5099c6bf4c65abf08d865474f231
+    modified: 1613766017718
+    created: 1613621036985
+    name: Authentication
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1613627326502
+    _type: request_group
+  - _id: req_403c43e18ac7480a820fee1aeedece9a
+    parentId: fld_330b56b1f8914c8a9433b86958cfbd82
+    modified: 1613765094916
+    created: 1613624120010
+    url: "{{ _.adonis }}/auth/login"
+    name: Login User
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"email": "teste01@gmail.com",
+        	"password": "12345"
+        }
+    parameters: []
+    headers:
+      - name: Accept
+        value: application/json
+        id: pair_10c6dd7f27434ce38bd5be2ab0a20c1e
+        disabled: false
+      - name: Content-Type
+        value: application/json
+        description: ""
+        id: pair_3d7bb6ea1ada4a9b8964362f5a14e44c
+    authentication: {}
+    metaSortKey: -1613621041998
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_b7be8db0aea54059b3a82f500ad5e857
+    parentId: fld_330b56b1f8914c8a9433b86958cfbd82
+    modified: 1613765261540
+    created: 1613624381772
+    url: "{{ _.adonis }}/auth/refresh"
+    name: Update token
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	
+        }
+    parameters: []
+    headers:
+      - name: Accept
+        value: application/json
+        id: pair_10c6dd7f27434ce38bd5be2ab0a20c1e
+        disabled: false
+      - name: Content-Type
+        value: application/json
+        description: ""
+        id: pair_3d7bb6ea1ada4a9b8964362f5a14e44c
+      - name: "{{ _.refresh_token }}"
+        value: "{{ _.refresh_token }}"
+        description: ""
+        id: pair_aacf4c46a0134f41bd149dbfe9c5f171
+    authentication: {}
+    metaSortKey: -1613621041948
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_3ce83d148e514fb6a9d78ab5a0616135
+    parentId: fld_330b56b1f8914c8a9433b86958cfbd82
+    modified: 1613765354582
+    created: 1613765121691
+    url: "{{ _.adonis }}/auth/logout"
+    name: Logout
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_fbd6e00e912e41c8835390a351f21863
+    authentication:
+      type: bearer
+      prefix: bearer
+      token: "{{ _.token }}"
+    metaSortKey: -1613621041898
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_90d08b57b626416f949410cb0c3ceaee
+    parentId: fld_aa657708d1534ae8bf83f4c47d8a5bb0
+    modified: 1613767278725
+    created: 1613767184114
+    url: "{{ _.adonis }}/admin/images"
+    name: Insert Image
+    description: ""
+    method: POST
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1613767184114
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_aa657708d1534ae8bf83f4c47d8a5bb0
+    parentId: fld_84a4f8ae4f0c4deda260e000ce27e835
+    modified: 1613766819187
+    created: 1613766819187
+    name: Image
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1613766819187
+    _type: request_group
+  - _id: fld_84a4f8ae4f0c4deda260e000ce27e835
+    parentId: wrk_25de5099c6bf4c65abf08d865474f231
+    modified: 1613627326452
+    created: 1613627326452
+    name: Admin
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1613627326452
+    _type: request_group
+  - _id: req_f230915a5027409a8ea05bdf6f299dcb
+    parentId: fld_aa657708d1534ae8bf83f4c47d8a5bb0
+    modified: 1613767282184
+    created: 1613767162937
+    url: "{{ _.adonis }}/admin/images"
+    name: List Image
+    description: ""
+    method: PUT
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1613767162937
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_8eefecf74acf41e79ebe9edaa2cd38fc
+    parentId: fld_aa657708d1534ae8bf83f4c47d8a5bb0
+    modified: 1613767283679
+    created: 1613767149038
+    url: "{{ _.adonis }}/admin/images"
+    name: Update Image
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1613767149038
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_6723b0acf21f4746890f6e01b97d46da
+    parentId: fld_aa657708d1534ae8bf83f4c47d8a5bb0
+    modified: 1613767285112
+    created: 1613767142168
+    url: "{{ _.adonis }}/admin/images"
+    name: Delete Image
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1613767142168
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_5828023a51d14519b87d3c95045ab170
+    parentId: fld_aa657708d1534ae8bf83f4c47d8a5bb0
+    modified: 1613767286605
+    created: 1613767085465
+    url: "{{ _.adonis }}/admin/images"
+    name: Get Image
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1613767085465
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_b9ef108a36df4611ba7176b7ca7d6fdc
+    parentId: fld_97b8b837aaa343d38730061c71cc1913
+    modified: 1613766896574
+    created: 1613766883350
+    url: "{{ _.adonis }}/admin/orders"
+    name: Create Order
+    description: ""
+    method: POST
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1613766883350
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_97b8b837aaa343d38730061c71cc1913
+    parentId: fld_84a4f8ae4f0c4deda260e000ce27e835
+    modified: 1613766810924
+    created: 1613766810924
+    name: Order
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1613766810924
+    _type: request_group
+  - _id: req_bb0bf10c305348ccaa7e14c91f61095e
+    parentId: fld_97b8b837aaa343d38730061c71cc1913
+    modified: 1613766901164
+    created: 1613766875078
+    url: "{{ _.adonis }}/admin/orders"
+    name: List Orders
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1613766875078
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_ccde2a5cb08c401cb0265e01de026b2f
+    parentId: fld_97b8b837aaa343d38730061c71cc1913
+    modified: 1613766904051
+    created: 1613766866640
+    url: "{{ _.adonis }}/admin/orders"
+    name: Get Order
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1613766866640
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_912103260fe444d7907f87dc4aaea02b
+    parentId: fld_97b8b837aaa343d38730061c71cc1913
+    modified: 1613766905672
+    created: 1613766855571
+    url: "{{ _.adonis }}/admin/orders"
+    name: Update Order
+    description: ""
+    method: PUT
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1613766855571
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_cfc286ca2533418eae0a8cdb58008850
+    parentId: fld_97b8b837aaa343d38730061c71cc1913
+    modified: 1613766907082
+    created: 1613766830573
+    url: "{{ _.adonis }}/admin/orders"
+    name: Delete Order
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1613766830573
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_e9286ea2f8eb46568cb282614b7ef869
+    parentId: fld_8c2e14973f1e448aad60f197297138de
+    modified: 1613766123427
+    created: 1613766087655
+    url: "{{ _.adonis }}/admin/users"
+    name: List User
+    description: ""
+    method: GET
+    body: {}
+    parameters:
+      - name: page
+        value: " 3"
+        description: ""
+        id: pair_834ac89772c94cc3b1cfc782c9268c64
+      - name: perpage
+        value: "5"
+        description: ""
+        id: pair_77c1c9dba2534d478a158d6c270896e4
+    headers: []
+    authentication: {}
+    metaSortKey: -1613765486674
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_8c2e14973f1e448aad60f197297138de
+    parentId: fld_84a4f8ae4f0c4deda260e000ce27e835
+    modified: 1613766024818
+    created: 1613766024818
+    name: Users
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1613766024818
+    _type: request_group
+  - _id: req_ffb606a1059f46e19ac09472b8457156
+    parentId: fld_8c2e14973f1e448aad60f197297138de
+    modified: 1613766121118
+    created: 1613766072940
+    url: "{{ _.adonis }}/admin/users"
+    name: Create User
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"title":"Categoria de Testes",
+        	"description": "Esta categoria é um teste"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_67b78e510c31477d863d721c93eca208
+    authentication: {}
+    metaSortKey: -1613765486624
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_e2fb42e4e0b84a368cbd5f7b74d3184d
+    parentId: fld_8c2e14973f1e448aad60f197297138de
+    modified: 1613766118473
+    created: 1613766062239
+    url: "{{ _.adonis }}/admin/users"
+    name: Update User
+    description: ""
+    method: PUT
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1613765486574
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_1222d0323e914ba09e84cea418274010
+    parentId: fld_8c2e14973f1e448aad60f197297138de
+    modified: 1613766115573
+    created: 1613766042834
+    url: "{{ _.adonis }}/admin/users"
+    name: List Users
+    description: ""
+    method: GET
+    body: {}
+    parameters:
+      - name: page
+        value: "3"
+        description: ""
+        id: pair_c390715fbfe44f5298f0368c6242fda4
+      - name: perpage
+        value: "5"
+        description: ""
+        id: pair_a1e78091c4c340dfb1b7a2f2e7b46f2f
+    headers: []
+    authentication: {}
+    metaSortKey: -1613765486524
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_3a3caddc986a4ab4bb492e7400cc9c88
+    parentId: fld_8c2e14973f1e448aad60f197297138de
+    modified: 1613766107928
+    created: 1613766052829
+    url: "{{ _.adonis }}/admin/users"
+    name: Delete User
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1613765486474
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_ecfc76b03c224b068694d4dd3b19c9e5
+    parentId: fld_bbb35ef3c61d41d1a4cc5d637129504e
+    modified: 1613765900580
+    created: 1613765884007
+    url: "{{ _.adonis }}/admin/products"
+    name: Get Product
+    description: ""
+    method: GET
+    body: {}
+    parameters:
+      - name: page
+        value: " 3"
+        description: ""
+        id: pair_834ac89772c94cc3b1cfc782c9268c64
+      - name: perpage
+        value: "5"
+        description: ""
+        id: pair_77c1c9dba2534d478a158d6c270896e4
+    headers: []
+    authentication: {}
+    metaSortKey: -1613765482739
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_bbb35ef3c61d41d1a4cc5d637129504e
+    parentId: fld_84a4f8ae4f0c4deda260e000ce27e835
+    modified: 1613765823984
+    created: 1613765823984
+    name: Product
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1613765823984
+    _type: request_group
+  - _id: req_56ca96e9917a4cbaae7bfd32b2e48f84
+    parentId: fld_bbb35ef3c61d41d1a4cc5d637129504e
+    modified: 1613765913166
+    created: 1613765871139
+    url: "{{ _.adonis }}/admin/products"
+    name: Create Product
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"title":"Categoria de Testes",
+        	"description": "Esta categoria é um teste"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_67b78e510c31477d863d721c93eca208
+    authentication: {}
+    metaSortKey: -1613765482689
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_ee52a6e106024b119485c6edc9e0058e
+    parentId: fld_bbb35ef3c61d41d1a4cc5d637129504e
+    modified: 1613765916334
+    created: 1613765859725
+    url: "{{ _.adonis }}/admin/products"
+    name: Update Product
+    description: ""
+    method: PUT
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1613765482639
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_6ee05f9f834841cdb7484df8e792711c
+    parentId: fld_bbb35ef3c61d41d1a4cc5d637129504e
+    modified: 1613765918860
+    created: 1613765846933
+    url: "{{ _.adonis }}/admin/products"
+    name: Delete Product
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1613765482589
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_307d046202db49d1adac7d992566687f
+    parentId: fld_bbb35ef3c61d41d1a4cc5d637129504e
+    modified: 1613765925022
+    created: 1613765835447
+    url: "{{ _.adonis }}/admin/products"
+    name: Get Product
+    description: ""
+    method: GET
+    body: {}
+    parameters:
+      - name: page
+        value: "3"
+        description: ""
+        id: pair_c390715fbfe44f5298f0368c6242fda4
+      - name: perpage
+        value: "5"
+        description: ""
+        id: pair_a1e78091c4c340dfb1b7a2f2e7b46f2f
+    headers: []
+    authentication: {}
+    metaSortKey: -1613765482539
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_5d97e063919044e7877805ca61e1738c
+    parentId: fld_40f275e2d3f246e6901ea4109743f8a5
+    modified: 1613765716235
+    created: 1613765490309
+    url: "{{ _.adonis }}/admin/categories/13"
+    name: Get Category
+    description: ""
+    method: GET
+    body: {}
+    parameters:
+      - name: page
+        value: "3"
+        description: ""
+        id: pair_c390715fbfe44f5298f0368c6242fda4
+      - name: perpage
+        value: "5"
+        description: ""
+        id: pair_a1e78091c4c340dfb1b7a2f2e7b46f2f
+    headers: []
+    authentication: {}
+    metaSortKey: -1613765490309
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_40f275e2d3f246e6901ea4109743f8a5
+    parentId: fld_84a4f8ae4f0c4deda260e000ce27e835
+    modified: 1613765411988
+    created: 1613765411988
+    name: Category
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1613765411988
+    _type: request_group
+  - _id: req_6b09f52d8e2a460abeb95a3910048ae7
+    parentId: fld_40f275e2d3f246e6901ea4109743f8a5
+    modified: 1613765741000
+    created: 1613765474769
+    url: "{{ _.adonis }}/admin/categories/13"
+    name: Delete Category
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1613765474769
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_bfbef8a433844bffa7e95b420aca7624
+    parentId: fld_40f275e2d3f246e6901ea4109743f8a5
+    modified: 1613765770947
+    created: 1613765464733
+    url: "{{ _.adonis }}/admin/categories/13"
+    name: Update Category
+    description: ""
+    method: PUT
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1613765464733
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_151a08a45e8842f5b7880d5f77e9c7cd
+    parentId: fld_40f275e2d3f246e6901ea4109743f8a5
+    modified: 1613765751945
+    created: 1613765443450
+    url: "{{ _.adonis }}/admin/categories/"
+    name: Create Category
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"title":"Categoria de Testes",
+        	"description": "Esta categoria é um teste"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_67b78e510c31477d863d721c93eca208
+    authentication: {}
+    metaSortKey: -1613765443450
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_60bcfac7b57541af85f0f49589ce4fb6
+    parentId: fld_40f275e2d3f246e6901ea4109743f8a5
+    modified: 1613765612703
+    created: 1613765424775
+    url: "{{ _.adonis }}/admin/categories"
+    name: Get Categories
+    description: ""
+    method: GET
+    body: {}
+    parameters:
+      - name: page
+        value: " 3"
+        description: ""
+        id: pair_834ac89772c94cc3b1cfc782c9268c64
+      - name: perpage
+        value: "5"
+        description: ""
+        id: pair_77c1c9dba2534d478a158d6c270896e4
+    headers: []
+    authentication: {}
+    metaSortKey: -1613765424775
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_992f298f85341b4b29104b63cc06de374b0410d4
+    parentId: wrk_25de5099c6bf4c65abf08d865474f231
+    modified: 1613620531714
+    created: 1613620531714
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1613620531714
+    _type: environment
+  - _id: jar_992f298f85341b4b29104b63cc06de374b0410d4
+    parentId: wrk_25de5099c6bf4c65abf08d865474f231
+    modified: 1613620531716
+    created: 1613620531716
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_eaa7533eff0743ad933e376b50862bc3
+    parentId: wrk_25de5099c6bf4c65abf08d865474f231
+    modified: 1613620531666
+    created: 1613620531666
+    fileName: Desafio
+    contents: ""
+    contentType: yaml
+    _type: api_spec
+  - _id: env_e168ee896833486eb64f0e4763c9daaa
+    parentId: env_992f298f85341b4b29104b63cc06de374b0410d4
+    modified: 1613624512281
+    created: 1613620844046
+    name: Adonis
+    data:
+      adonis: http://localhost:3333/v1
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjMyLCJpYXQiOjE2MTM2MjQyODV9.pRaajXKQvA6Dsf5luKBzHkYLcFyp5t7TAP7XWDbfvjc
+      refresh_token: ee16a9ab9d4fe114e03259fb766af2a93d0IIyyrJ+lST6am+YUC4bKPnD2RNKQXdZUVEahYRMpF4tqWrylbGxNTY5GPq5cr
+    dataPropertyOrder:
+      "&":
+        - adonis
+        - token
+        - refresh_token
+    color: "#7d69cb"
+    isPrivate: false
+    metaSortKey: 1613620844047
+    _type: environment
