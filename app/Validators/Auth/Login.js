@@ -7,7 +7,7 @@ class Login {
       email: 'required|email',
       password: 'required'
     }
-  }
+  } 
 }
 
 module.exports = Login
