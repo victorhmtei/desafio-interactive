@@ -6,11 +6,22 @@ const Route = use('Route')
 Route.group(()=>{
     //
 
-    Route.resource('categories','CategoryController').apiOnly()
+    Route.resource('categories','CategoryController').apiOnly().validator(
+        new Map([
+            [['categories.store'],['Admin/StoreCategory']],
+            [['categories.update'],['Admin/StoreCategory']]
+]))
     Route.resource('products','ProductController').apiOnly()
-    Route.resource('orders','OrderController').apiOnly()
+    Route.resource('orders','OrderController').apiOnly().validator(new Map(
+        [
+            [['orders.store'],['Admin/StoreOrder']]
+        ]
+    ))
     Route.resource('images','ImagesController').apiOnly()
-    Route.resource('users','UserController').apiOnly()
+    Route.resource('users','UserController').apiOnly().validator([
+        [['users.store'],['Admin/StoreUser']],
+        [['users.update'],['Admin/StoreUser']]
+    ])
 
 
 
