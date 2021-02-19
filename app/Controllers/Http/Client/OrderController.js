@@ -9,8 +9,7 @@ const Transformer = use('App/Transformers/Admin/OrderTransformer')
 const Database = use('Database')
 const Service = use('App/Services/Order/OrderService')
 const Ws = use('Ws')
-const Coupon = use('App/Models/Coupon')
-const Discount = use('App/Models/Discount')
+
 
 /**
  * Resourceful controller for interacting with orders
