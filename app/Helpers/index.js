@@ -1,6 +1,6 @@
 'use strict'
 
-const crypyo = use('crypto')
+const crypto = use('crypto')
 const Helpers = use('Helpers')
 
 /**
@@ -18,7 +18,7 @@ const Helpers = use('Helpers')
     if(len < length){
         let size = length - len
         let bytes = await crypto.randomBytes(size)
-        let buffer = new Buffer.from(bytes)
+        let buffer = Buffer.from(bytes)
         string += buffer.toString('base64').replace(/[^a-zA-Z0-0]/g, '').substr(0,size)  //replace tira tudo que nao for no padrao escrito
     }
 
