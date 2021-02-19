@@ -17,7 +17,7 @@ Route.group(()=>{
             [['orders.store'],['Admin/StoreOrder']]
         ]
     ))
-    Route.resource('images','ImagesController').apiOnly()
+    Route.resource('images','ImageController').apiOnly()
     Route.resource('users','UserController').apiOnly().validator(new Map([
         [['users.store'],['Admin/StoreUser']],
         [['users.update'],['Admin/StoreUser']]

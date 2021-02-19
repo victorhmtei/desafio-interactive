@@ -3,6 +3,7 @@
 const Database= use('Database')
 const User = use('App/Models/User')
 const Role = use('Role')
+const Ws = use('Ws')
 
 class AuthController {
 
@@ -14,6 +15,10 @@ class AuthController {
             const userRole = await Role.findBy('slug', 'client')
             await user.roles().attach([userRole.id],null,trx)
             await trx.commit()
+            const topic = Ws.getChannel('notifications').topic('notifications')
+            if(topic){
+                topic.broadcast('new:user')
+            }
             return response.status(201).send({data:user})
 
         }catch(error){
@@ -55,7 +60,7 @@ class AuthController {
             refresh_token = request.header('refresh_token')
         }
 
-        await auth.authenticatos('jwt').revokeTokens([refresh_token], true)
+        await auth.authenticator('jwt').revokeTokens([refresh_token], true)
         return response.status(204).send({})
 
     }

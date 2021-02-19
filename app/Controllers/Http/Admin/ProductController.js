@@ -4,7 +4,7 @@
 /** @typedef {import('@adonisjs/framework/src/Response')} Response */
 /** @typedef {import('@adonisjs/framework/src/View')} View */
 const Product = use('App/Models/Product')
-const Transformer = use('App/Transformers/Admin/ImageTransformer')
+const Transformer = use('App/Transformers/Admin/ProductTransformer')
 
 /**
  * Resourceful controller for interacting with products
@@ -44,7 +44,7 @@ class ProductController {
   async store ({ request, response, transform }) {
 
     try {
-      const{ name, description, price, image_id} = request.all()
+      var{ name, description, price, image_id} = request.all()
       var product = await Product.create({name, description, price, image_id})
       product = await transform.item(product, Transformer)
       return response.status(201).send(product)

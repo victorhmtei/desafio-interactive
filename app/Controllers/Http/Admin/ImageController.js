@@ -63,9 +63,9 @@ class ImageController {
             extension: file.subtype 
           })
           // transformaçao
-          const trasnformedImage = await transform.item(image, Transformer)
+          const transformedImage = await transform.item(image, Transformer)
 
-          images.push(trasnformedImage)
+          images.push(transformedImage)
 
           return response.status(201).send({successes: images, errors:{}})
         }
@@ -80,14 +80,14 @@ class ImageController {
 
       await Promise.all(
         files.successes.map(async file =>{
-          var image = await Image.create({
+          const image = await Image.create({
             path: file.fileName,
             size: file.size,
             original_name: file.clientName,
             extension: file.subtype
           })
-          const trasnformedImage = await transform.item(image, Transformer)
-          images.push(trasnformedImage)
+          const transformedImage = await transform.item(image, Transformer)
+          images.push(transformedImage)
         })
       )
 
@@ -108,7 +108,7 @@ class ImageController {
    * @param {Response} ctx.response
    * @param {View} ctx.view
    */
-  async show ({ params, request, response, transform }) {
+  async show ({ params:{id}, request, response, transform }) {
     var image = await Image.findOrFail(id)
     image = transform.item(image, Transformer)
     return response.send(image)
@@ -128,7 +128,7 @@ class ImageController {
     try {
       image.merge(request.only(['original_name']))
       await image.save()
-      image = await tranform.item(image, Transformer)
+      image = await transform.item(image, Transformer)
       return response.status(200).send(image)
     } catch (error) {
       return response.status(400).send({

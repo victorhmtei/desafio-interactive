@@ -22,18 +22,18 @@ class OrderController {
    * @param {Response} ctx.response
    * @param {object} ctx.paginate
    */
-  async index ({ request, response, pagination, transform }) {
-
-    const { status, id  } = request.only(['status', 'id' ])
+  async index({ request, response, pagination, transform }) {
+    const { status, id } = request.only(['status', 'id '])
     const query = Order.query()
 
-    if(status && id){
-      query.where('status', status).orWhere('id', 'LIKE', `%${id}`)
-    } else if(status){
+    if (status && id) {
+      query.where('status', status).orWhere('id', 'LIKE', `%${id}%`)
+    } else if (status) {
       query.where('status', status)
-    } else if(id){
-      query.where('id', 'LIKE', `%${id}`)
+    } else if (id) {
+      query.where('id', 'LIKE', `%${id}%`)
     }
+
     var orders = await query.paginate(pagination.page, pagination.limit)
     orders = await transform.paginate(orders, Transformer)
     return response.send(orders)
@@ -105,7 +105,7 @@ class OrderController {
       await service.updateItems(items)
       await order.save(trx)
       await trx.commit()
-      order = await transform.include('items,user').item(order, transform)
+      order = await transform.include('items,user').item(order, Transformer)
       return response.send(order)
     } catch (error) {
 

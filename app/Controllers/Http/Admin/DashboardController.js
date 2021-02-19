@@ -8,8 +8,9 @@ class DashboardController {
         const users = await DB.from('users').getCount()
         const orders = await DB.from('orders').getCount()
         const products = await DB.from('products').getCount()
-        const subtotal = await DB.from('orders_items').getSum('subtotal')
-        return response.send({users,subtotal,orders,products })
+        const subtotal = await DB.from('order_items').getSum('subtotal')
+        const revenues = subtotal
+        return response.send({users,revenues,orders,products })
     }
 }
 
