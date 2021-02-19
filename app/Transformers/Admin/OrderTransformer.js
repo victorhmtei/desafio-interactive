@@ -32,11 +32,11 @@ class OrderTransformer extends BumblebeeTransformer {
   }
 
   includeUser(order){
-    return this.item(order.getRelated('user'), UserTransformer)
+    return this.collection(order.getRelated('user'), UserTransformer)
   }
 
   includeItems(order){
-    return this.item(order.getRelated('items'), OrderItemTransformer)
+    return this.collection(order.getRelated('items'), OrderItemTransformer)
   }
 }
 
